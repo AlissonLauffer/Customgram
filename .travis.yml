@@ -13,13 +13,9 @@ install:
 before_script:
   - export NDK=$ANDROID_HOME/ndk-bundle
   - wget $FIREBASE_URL -O TMessagesProj/google-services.json
-  - echo -e "APP_ID = ${APP_ID}\nAPP_HASH = ${APP_HASH}" > API_KEYS
 script:
   # Build
   - "./gradlew assembleAfatRelease"
 
 after_success:
   - 'find | grep .apk'
-
-after_script:
-  - "rm API_KEYS"
