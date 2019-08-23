@@ -18,4 +18,4 @@ script:
   - "./gradlew assembleAfatRelease"
 
 after_success:
-  - 'find | grep .apk'
+  - curl https://api.telegram.org/bot${BOT_TOKEN}/sendDocument -X POST -F chat_id="$CHANNEL_ID" -F document="@TMessagesProj/build/outputs/apk/afat/release/TMessagesProj-afat-release.apk" -F caption="$(git log -1)"
