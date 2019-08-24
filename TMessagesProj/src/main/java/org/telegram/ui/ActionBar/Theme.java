@@ -2020,17 +2020,15 @@ public class Theme {
         themes.add(themeInfo);
         themesDict.put("Dark Blue", currentNightTheme = themeInfo);
 
-        if (BuildVars.DEBUG_VERSION) {
-            themeInfo = new ThemeInfo();
-            themeInfo.name = "Graphite";
-            themeInfo.assetName = "graphite.attheme";
-            themeInfo.previewBackgroundColor = 0xff7a7e89;
-            themeInfo.previewInColor = 0xff989ba3;
-            themeInfo.previewOutColor = 0xffa4bff9;
-            themeInfo.sortIndex = 3;
-            themes.add(themeInfo);
-            themesDict.put("Graphite", themeInfo);
-        }
+        themeInfo = new ThemeInfo();
+        themeInfo.name = "Graphite";
+        themeInfo.assetName = "graphite.attheme";
+        themeInfo.previewBackgroundColor = 0xff7a7e89;
+        themeInfo.previewInColor = 0xff989ba3;
+        themeInfo.previewOutColor = 0xffa4bff9;
+        themeInfo.sortIndex = 3;
+        themes.add(themeInfo);
+        themesDict.put("Graphite", themeInfo);
 
         themeInfo = new ThemeInfo();
         themeInfo.name = "Arctic Blue";
