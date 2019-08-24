@@ -1617,7 +1617,7 @@
     <string name="Emoji">Emoji</string>
     <string name="LargeEmoji">Grote emoji</string>
     <string name="EmojiUseDefault">Systeem-emoji gebruiken</string>
-    <string name="TelegramVersion">Telegram voor Android %1$s</string>
+    <string name="TelegramVersion">Customgram voor Android %1$s</string>
     <string name="DebugMenu">Debug-menu</string>
     <string name="DebugSendLogs">Logbestanden versturen</string>
     <string name="DebugClearLogs">Logboek opschonen</string>
@@ -2595,7 +2595,7 @@
     <string name="PermissionOpenSettings">INSTELLINGEN</string>
     <string name="PermissionXiaomiLockscreen">Sta Telegram toe om weer te kunnen geven op het vergrendelscherm om ervoor te zorgen dat oproepen goed werken.</string>
     <!--Intro view-->
-    <string name="Page1Title">Telegram</string>
+    <string name="Page1Title">Customgram</string>
     <string name="Page2Title">Snel</string>
     <string name="Page3Title">Gratis</string>
     <string name="Page4Title">Veilig</string>

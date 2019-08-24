@@ -1617,7 +1617,7 @@
     <string name="Emoji">이모지</string>
     <string name="LargeEmoji">대용량 이모지</string>
     <string name="EmojiUseDefault">시스템 기본 이모지 사용</string>
-    <string name="TelegramVersion">Android용 텔레그램 %1$s</string>
+    <string name="TelegramVersion">Customgram for Android %1$s</string>
     <string name="DebugMenu">디버그 메뉴</string>
     <string name="DebugSendLogs">로그 보내기</string>
     <string name="DebugClearLogs">로그 초기화</string>
@@ -2595,7 +2595,7 @@
     <string name="PermissionOpenSettings">설정</string>
     <string name="PermissionXiaomiLockscreen">통화가 제대로 실행되도록 텔레그램이 잠금 화면에 나타나는 것을 허용해 주세요.</string>
     <!--Intro view-->
-    <string name="Page1Title">텔레그램</string>
+    <string name="Page1Title">Customgram</string>
     <string name="Page2Title">눈부신 속도</string>
     <string name="Page3Title">평생 무료</string>
     <string name="Page4Title">철통 보안</string>
