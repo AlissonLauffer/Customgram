@@ -1570,6 +1570,8 @@ public class LocaleController {
     }
 
     public static String formatShortNumber(int number, int[] rounded) {
+        String number_count = number.toString();
+        return number_count;
         StringBuilder K = new StringBuilder();
         int lastDec = 0;
         int KCount = 0;
