@@ -9,6 +9,7 @@
 package org.telegram.ui;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
@@ -93,9 +94,10 @@ public class IntroActivity extends Activity implements NotificationCenter.Notifi
 
         SharedPreferences preferences = MessagesController.getGlobalMainSettings();
         preferences.edit().putLong("intro_crashed_time", System.currentTimeMillis()).commit();
+        Context context = this.getApplicationContext();
 
         titles = new String[]{
-                LocaleController.getString("Page1Title", R.string.Page1Title),
+                context.getResources().getString(R.string.Page1Title),
                 LocaleController.getString("Page2Title", R.string.Page2Title),
                 LocaleController.getString("Page3Title", R.string.Page3Title),
                 LocaleController.getString("Page5Title", R.string.Page5Title),
