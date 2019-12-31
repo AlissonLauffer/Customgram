@@ -38,7 +38,7 @@ dependencies {
 android {
     compileSdkVersion 29
     buildToolsVersion '29.0.2'
-    ndkVersion "20.0.5594570"
+    ndkVersion "20.1.5948944"
 
     defaultConfig.applicationId = "org.telegram.customgram"
 
