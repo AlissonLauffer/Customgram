@@ -1,0 +1,21 @@
+language: android
+dist: trusty
+jdk:
+  - openjdk8
+android:
+  components:
+    - build-tools-28.0.3
+    - android-28
+
+install:
+  - set -e
+  - echo y | sdkmanager "ndk-bundle"
+before_script:
+  - export NDK=$ANDROID_HOME/ndk-bundle
+  - wget $FIREBASE_URL -O TMessagesProj/google-services.json
+script:
+  # Build
+  - "./gradlew assembleAfatRelease"
+
+after_success:
+  - curl https://api.telegram.org/bot${BOT_TOKEN}/sendDocument -X POST -F chat_id="$CHANNEL_ID" -F document="@TMessagesProj/build/outputs/apk/afat/release/TMessagesProj-afat-release.apk" -F caption="$(git log -1)"
