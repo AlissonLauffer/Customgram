@@ -1416,7 +1416,7 @@ public class LoginActivity extends BaseFragment {
             addProxyButton.setGravity(Gravity.CENTER);
             addProxyButton.setTextColor(0xffffffff);
             addProxyButton.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
-            addProxyButton.setBackgroundResource(R.drawable.regbtn_states);
+            addProxyButton.setBackgroundResource(R.drawable.actionbtn_next);
             if (Build.VERSION.SDK_INT >= 21) {
                 StateListAnimator animator = new StateListAnimator();
                 animator.addState(new int[]{android.R.attr.state_pressed}, ObjectAnimator.ofFloat(addProxyButton, "translationZ", AndroidUtilities.dp(2), AndroidUtilities.dp(4)).setDuration(200));
