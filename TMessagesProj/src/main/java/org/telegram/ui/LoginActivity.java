@@ -1412,11 +1412,11 @@ public class LoginActivity extends BaseFragment {
             textViewProxy.setLineSpacing(AndroidUtilities.dp(2), 1.0f);
             addView(textViewProxy, LayoutHelper.createLinear(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT, 0, 28, 0, 10));
             TextView addProxyButton = new TextView(context);
-            addProxyButton.setText("SET A PROXY");
+            addProxyButton.setText("Set a proxy");
             addProxyButton.setGravity(Gravity.CENTER);
             addProxyButton.setTextColor(0xffffffff);
             addProxyButton.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
-            addProxyButton.setBackgroundResource(R.drawable.actionbtn_next);
+            addProxyButton.setBackgroundDrawable(Theme.createSimpleSelectorRoundRectDrawable(AndroidUtilities.dp(4), 0xff50a8eb, 0xff439bde));
             if (Build.VERSION.SDK_INT >= 21) {
                 StateListAnimator animator = new StateListAnimator();
                 animator.addState(new int[]{android.R.attr.state_pressed}, ObjectAnimator.ofFloat(addProxyButton, "translationZ", AndroidUtilities.dp(2), AndroidUtilities.dp(4)).setDuration(200));
