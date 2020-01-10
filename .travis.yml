@@ -14,9 +14,12 @@ before_script:
   - export NDK=$ANDROID_HOME/ndk-bundle
   - wget $FIREBASE_URL -O TMessagesProj/google-services.json
 script:
-  # Build
+  # Build apk
   - "./gradlew assembleAfatRelease"
+  # Build bundle apk
+  - "./gradlew bundleAfatRelease"
 
 after_success:
   - export name=$(find -name '*.apk')
   - curl https://api.telegram.org/bot${BOT_TOKEN}/sendDocument -X POST -F chat_id="$CHANNEL_ID" -F document="@$name" -F caption="$(git log -1)"
+  - curl https://api.telegram.org/bot${BOT_TOKEN}/sendDocument -X POST -F chat_id="$CHANNEL_ID" -F document="@./TMessagesProj/build/outputs/bundle/afatRelease/TMessagesProj-afat-release.aab" -F caption="Bundle file"
