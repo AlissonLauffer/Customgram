@@ -4,9 +4,10 @@
 
 [Customgram](https://t.me/Customgram) is an unofficial Telegram client for Android that has some additions to the official Telegram app.
 
-[![Build Status](https://travis-ci.com/alissonlauffer/Customgram.svg?branch=master)](https://travis-ci.com/alissonlauffer/Customgram)
+[![Build Status](https://travis-ci.com/AmanoTeam/Customgram.svg?branch=master)](https://travis-ci.com/AmanoTeam/Customgram)
 
 ## Features
+ - Max accounts increased to 10.
  - Option to set up a proxy before login.
  - Option to clear media from cache.
  - "Delete for everyone" enabled by default.
