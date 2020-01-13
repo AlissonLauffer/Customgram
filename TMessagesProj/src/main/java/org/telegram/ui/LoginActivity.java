@@ -579,7 +579,7 @@ public class LoginActivity extends BaseFragment {
 
     @Override
     protected void onDialogDismiss(Dialog dialog) {
-        if (Build.VERSION.SDK_INT >= 23) {
+        /*if (Build.VERSION.SDK_INT >= 23) {
             if (dialog == permissionsDialog && !permissionsItems.isEmpty() && getParentActivity() != null) {
                 try {
                     getParentActivity().requestPermissions(permissionsItems.toArray(new String[0]), 6);
@@ -593,7 +593,7 @@ public class LoginActivity extends BaseFragment {
 
                 }
             }
-        }
+        }*/
     }
 
     @Override
@@ -1586,7 +1586,7 @@ public class LoginActivity extends BaseFragment {
                 allowCall = getParentActivity().checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED;
                 allowCancelCall = getParentActivity().checkSelfPermission(Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED;
                 allowReadCallLog = Build.VERSION.SDK_INT < 28 || getParentActivity().checkSelfPermission(Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED;
-                if (checkPermissions) {
+                /*if (checkPermissions) {
                     permissionsItems.clear();
                     if (!allowCall) {
                         permissionsItems.add(Manifest.permission.READ_PHONE_STATE);
@@ -1624,7 +1624,7 @@ public class LoginActivity extends BaseFragment {
                             return;
                         }
                     }
-                }
+                }*/
             }
 
             if (countryState == 1) {
@@ -1749,7 +1749,7 @@ public class LoginActivity extends BaseFragment {
                     boolean allowCall = true;
                     if (Build.VERSION.SDK_INT >= 23) {
                         allowCall = getParentActivity().checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED;
-                        if (checkShowPermissions && !allowCall) {
+                        /*if (checkShowPermissions && !allowCall) {
                             permissionsShowItems.clear();
                             if (!allowCall) {
                                 permissionsShowItems.add(Manifest.permission.READ_PHONE_STATE);
@@ -1768,7 +1768,7 @@ public class LoginActivity extends BaseFragment {
                                 }
                             }
                             return;
-                        }
+                        }*/
                     }
                     if (!newAccount && allowCall) {
                         String number = PhoneFormat.stripExceptNumbers(tm.getLine1Number());
