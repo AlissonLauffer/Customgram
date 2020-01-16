@@ -12,6 +12,8 @@
  - Option to clear media from cache.
  - "Delete for everyone" enabled by default.
  - Upload date for profile photos.
+ - Make links and username on user bios clickable
 
 ## Downloads
- - APK files are available at our [Telegram channel.](https://t.me/Customgram)
+ - You can download from [Play Store](https://play.google.com/store/apps/details?id=org.telegram.customgram).
+ - APK files are available over [APKPure](https://apkpure.com/customgram/org.telegram.customgram).
