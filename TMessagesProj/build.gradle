@@ -297,12 +297,6 @@ android {
                 } else {
                     directory = outputDir.get().asFile
                 }
-
-                String manifestPath = directory.toString() + "/AndroidManifest.xml"
-                def manifestContent = file(manifestPath).getText()
-
-                manifestContent = manifestContent.replace(String.format('android:versionCode="%d"', defaultConfig.versionCode), String.format('android:versionCode="%s"', defaultConfig.versionCode * 10 + abiVersion))
-                file(manifestPath).write(manifestContent)
             }
         }
     }
