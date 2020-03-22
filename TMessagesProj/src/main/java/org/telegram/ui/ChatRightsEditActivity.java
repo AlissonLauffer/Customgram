@@ -1195,7 +1195,7 @@ public class ChatRightsEditActivity extends BaseFragment {
                         checkCell.setTextAndCheck(LocaleController.getString("UserRestrictionsSendStickers2", R.string.UserRestrictionsSendStickers2), !bannedRights.send_stickers && !defaultBannedRights.send_stickers, true);
                         checkCell.setIcon(defaultBannedRights.send_stickers ? R.drawable.permission_locked : 0);
                     } else if (position == sendGifsRow) {
-                        checkCell.setTextAndCheck(LocaleController.getString("UserRestrictionsSendGifs", R.string.UserRestrictionsSendGifs), !bannedRights.sen_gifs && !defaultBannedRights.send_gifs, true);
+                        checkCell.setTextAndCheck(LocaleController.getString("UserRestrictionsSendGifs", R.string.UserRestrictionsSendGifs), !bannedRights.send_gifs && !defaultBannedRights.send_gifs, true);
                         checkCell.setIcon(defaultBannedRights.send_gifs ? R.drawable.permission_locked : 0);
                     } else if (position == embedLinksRow) {
                         checkCell.setTextAndCheck(LocaleController.getString("UserRestrictionsEmbedLinks", R.string.UserRestrictionsEmbedLinks), !bannedRights.embed_links && !defaultBannedRights.embed_links, true);
