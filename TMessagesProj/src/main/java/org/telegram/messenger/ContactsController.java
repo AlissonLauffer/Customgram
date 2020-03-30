@@ -311,7 +311,7 @@ public class ContactsController extends BaseController {
     public void checkAppAccount() {
         AccountManager am = AccountManager.get(ApplicationLoader.applicationContext);
         try {
-            Account[] accounts = am.getAccountsByType("org.telegram.messenger");
+            Account[] accounts = am.getAccountsByType("org.telegram.customgram");
             systemAccount = null;
             for (int a = 0; a < accounts.length; a++) {
                 Account acc = accounts[a];
@@ -357,7 +357,7 @@ public class ContactsController extends BaseController {
         try {
             systemAccount = null;
             AccountManager am = AccountManager.get(ApplicationLoader.applicationContext);
-            Account[] accounts = am.getAccountsByType("org.telegram.messenger");
+            Account[] accounts = am.getAccountsByType("org.telegram.customgram");
             for (int a = 0; a < accounts.length; a++) {
                 Account acc = accounts[a];
                 boolean found = false;
