@@ -15,7 +15,7 @@ before_script:
   - wget $FIREBASE_URL -O TMessagesProj/google-services.json
 script:
   # Build apk
-  - "./gradlew assembleAfatDebug"
+  - "./gradlew assembleAfatRelease"
   # Build bundle apk
   - "./gradlew bundleAfatRelease"
 
