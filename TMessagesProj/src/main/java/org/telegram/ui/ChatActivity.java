@@ -13933,7 +13933,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                                     icons.add(R.drawable.msg_gallery);
                                 }
                             }
-                            items.add("Clear from cache");
+                            items.add(LocaleController.getString("ClearFromCache", R.string.ClearFromCache));
                             options.add(27);
                             icons.add(R.drawable.msg_delete);
                         } else if (type == 5) {
@@ -13966,7 +13966,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                             items.add(LocaleController.getString("ShareFile", R.string.ShareFile));
                             options.add(6);
                             icons.add(R.drawable.msg_shareout);
-                            items.add("Clear from cache");
+                            items.add(LocaleController.getString("ClearFromCache", R.string.ClearFromCache));
                             options.add(27);
                             icons.add(R.drawable.msg_delete);
                         } else if (type == 7) {
@@ -14092,7 +14092,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                                 options.add(4);
                                 icons.add(R.drawable.msg_gallery);
                             }
-                            items.add("Clear from cache");
+                            items.add(LocaleController.getString("ClearFromCache", R.string.ClearFromCache));
                             options.add(27);
                             icons.add(R.drawable.msg_delete);
                         } else if (type == 5) {

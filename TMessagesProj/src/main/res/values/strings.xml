@@ -3598,4 +3598,5 @@
     <!--Customgram specific strings-->
     <string name="UserRestrictionsSendStickers2">Send Stickers</string>
     <string name="UserRestrictionsSendGifs">Send GIFs</string>
+    <string name="ClearFromCache">Clear from cache</string>
 </resources>
