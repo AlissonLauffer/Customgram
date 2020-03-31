@@ -12,7 +12,6 @@ install:
   - echo y | sdkmanager "ndk-bundle"
 before_script:
   - export NDK=$ANDROID_HOME/ndk-bundle
-  - wget $FIREBASE_URL -O TMessagesProj/google-services.json
 script:
   # Build apk
   - "./gradlew assembleAfatRelease"
