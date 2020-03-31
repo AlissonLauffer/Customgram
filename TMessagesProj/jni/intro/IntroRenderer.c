@@ -1758,7 +1758,7 @@ JNIEXPORT void Java_org_telegram_messenger_Intro_onDrawFrame(JNIEnv *env, jclass
         telegram_sphere.params.alpha = alpha;
         telegram_sphere.params.scale = xyzMake(scale, scale, 1);
 
-        telegram_plane.params.alpha = 1;
+        telegram_plane.params.alpha = 0;
 
         float tt = MINf(0, (float) (-M_PI * 125. / 180. + time * M_PI * 2 * 1.5));
 
