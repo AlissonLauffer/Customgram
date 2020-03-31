@@ -1574,11 +1574,11 @@ public class LocaleController {
     }
 
     public static String formatShortNumber(int number, int[] rounded) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("");
-        sb.append(number);
-        String number_str = sb.toString();
-        return number_str;
+        StringBuilder stringBuilder = new StringBuilder(String.format(Locale.US, "%d", number));
+        for (int a = stringBuilder.length() - 3; a > 0; a -= 3) {
+            stringBuilder.insert(a, ',');
+        }
+        return stringBuilder.toString();
 
 //        StringBuilder K = new StringBuilder();
 //        int lastDec = 0;
