@@ -213,7 +213,7 @@ public class ThemeActivity extends BaseFragment implements NotificationCenter.No
 
         private ThemePreviewMessagesCell messagesCell;
         private SeekBarView sizeBar;
-        private int startFontSize = 12;
+        private int startFontSize = 10;
         private int endFontSize = 30;
 
         private TextPaint textPaint;

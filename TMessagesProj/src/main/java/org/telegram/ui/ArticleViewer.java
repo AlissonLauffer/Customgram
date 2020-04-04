@@ -497,7 +497,7 @@ public class ArticleViewer implements NotificationCenter.NotificationCenterDeleg
     private class TextSizeCell extends FrameLayout {
 
         private SeekBarView sizeBar;
-        private int startFontSize = 12;
+        private int startFontSize = 10;
         private int endFontSize = 30;
         private int lastWidth;
 
