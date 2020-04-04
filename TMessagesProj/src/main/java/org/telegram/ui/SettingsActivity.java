@@ -546,8 +546,6 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                                 VoIPHelper.showCallDebugSettings(getParentActivity());
                             } else if (which == 8) {
                                 SharedConfig.toggleRoundCamera16to9();
-                            } else if (which == 9) {
-                                ((LaunchActivity) getParentActivity()).checkAppUpdate(true);
                             } else if (which == 10) {
                                 MessagesStorage.getInstance(currentAccount).readAllDialogs(-1);
                             } else if (which == 11) {
