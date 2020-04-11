@@ -676,10 +676,12 @@ public class ChatEditActivity extends BaseFragment implements ImageUpdater.Image
             presentFragment(fragment);
         });
 
-        logCell = new TextCell(context);
-        logCell.setTextAndIcon(LocaleController.getString("EventLog", R.string.EventLog), R.drawable.group_log, false);
-        logCell.setBackgroundDrawable(Theme.getSelectorDrawable(false));
-        logCell.setOnClickListener(v -> presentFragment(new ChannelAdminLogActivity(currentChat)));
+        if (ChatObject.isChannel(currentChat)) {
+            logCell = new TextCell(context);
+            logCell.setTextAndIcon(LocaleController.getString("EventLog", R.string.EventLog), R.drawable.group_log, false);
+            logCell.setBackgroundDrawable(Theme.getSelectorDrawable(false));
+            logCell.setOnClickListener(v -> presentFragment(new ChannelAdminLogActivity(currentChat)));
+        }
 
         if (!isChannel) {
             infoContainer.addView(blockCell, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, LayoutHelper.WRAP_CONTENT));

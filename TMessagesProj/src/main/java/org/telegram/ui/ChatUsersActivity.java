@@ -2679,7 +2679,7 @@ public class ChatUsersActivity extends BaseFragment implements NotificationCente
                             }
                         }
                     } else if (position == recentActionsRow) {
-                        //actionCell.setText(LocaleController.getString("EventLog", R.string.EventLog), null, R.drawable.group_log, false);
+                        actionCell.setText(LocaleController.getString("EventLog", R.string.EventLog), null, R.drawable.group_log, false);
                     } else if (position == addNew2Row) {
                         actionCell.setText(LocaleController.getString("ChannelInviteViaLink", R.string.ChannelInviteViaLink), null, R.drawable.profile_link, true);
                     }
